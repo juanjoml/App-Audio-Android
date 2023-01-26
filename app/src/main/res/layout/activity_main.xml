@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mi teclado"
+                android:textSize="12sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonDo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/violeta"
+                        android:onClick="funcionDo"
+                        android:text="Do" />
+
+                    <Button
+                        android:id="@+id/buttonRe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/azul"
+                        android:onClick="funcionRe"
+                        android:text="Re" />
+
+                    <Button
+                        android:id="@+id/buttonMi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/verde"
+                        android:onClick="funcionMi"
+                        android:text="Mi" />
+
+                    <Button
+                        android:id="@+id/buttonFa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/amarillo"
+                        android:onClick="funcionFa"
+                        android:text="Fa" />
+
+                    <Button
+                        android:id="@+id/buttonSol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/naranja"
+                        android:onClick="funcionSol"
+                        android:text="Sol" />
+
+                    <Button
+                        android:id="@+id/buttonLa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/rojo"
+                        android:onClick="funcionLa"
+                        android:text="La" />
+
+                    <Button
+                        android:id="@+id/buttonSi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/marron"
+                        android:onClick="funcionSi"
+                        android:text="Si" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textViewTituloVelocidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Velocidad"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/buttonMas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="funcionMasVelocidad"
+                android:text="+"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewVelocidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/buttonMenos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="funcionMenosVelocidad"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewTituloCancion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Titulo de la cancion - Duracion"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/buttonCancion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="funcionCancion1"
+                android:text="Cancion 1" />
+
+            <Button
+                android:id="@+id/buttonCancion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:onClick="funcionCancion2"
+                android:text="Cancion 2" />
+
+            <Button
+                android:id="@+id/buttonDetener"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/rojo"
+                android:onClick="funcionDetener"
+                android:text="Detener" />
+
+            <Button
+                android:id="@+id/buttonPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:backgroundTint="@color/verde"
+                android:onClick="funcionPlay"
+                android:text="Play" />
+
+            <Button
+                android:id="@+id/buttonPausar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:backgroundTint="@color/naranja"
+                android:onClick="funcionPausar"
+                android:text="Pausar" />
+
+            <Button
+                android:id="@+id/buttonSubirVolumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="funcionSubirVolumen"
+                android:text="Subir Volumen" />
+
+            <Button
+                android:id="@+id/buttonBajarVolumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:onClick="funcionBajarVolumen"
+                android:text="Bajar Volumen" />
+
+            <Button
+                android:id="@+id/buttonEmpezarEn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="funcionEmpezarEn"
+                android:text="Empezar En" />
+
+            <EditText
+                android:id="@+id/editTextEmpezarEn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/buttonGrabarDetener"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/rojo"
+                android:onClick="funcionGrabarDetener"
+                android:text="Grabar - Detener" />
+
+            <Button
+                android:id="@+id/buttonReproducir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/verde"
+                android:onClick="funcionReproducir"
+                android:text="Reproducir Audio" />
+
+            <Button
+                android:id="@+id/buttonGrabarDetenerMelodia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/rojo"
+                android:onClick="funcionGrabarMelodia"
+                android:text="Grabar Detener Melodia" />
+
+            <Button
+                android:id="@+id/buttonReproducirMelodia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/verde"
+                android:onClick="funcionReproducirMelodia"
+                android:text="Reproducir Melodia" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
